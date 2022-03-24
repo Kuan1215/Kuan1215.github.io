@@ -1,4 +1,4 @@
-[我的GitHub Pages首頁](https://github.com/Kuan1215/Kuan1215.github.io/)
+[我的GitHub Pages首頁](https://Kuan1215.github.io/)
 
 # h1 標題
 ## h2 標題
