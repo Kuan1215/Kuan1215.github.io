@@ -13,7 +13,6 @@
     margin: auto;
     color: white;
     justify-content: end;
-
 }
 .advertise img{
     width: 30px;
@@ -80,7 +79,7 @@
     margin: auto;
     text-align: center;
 }
-.Introduction h2{
+.Introduction h1{
     font-size: 40px;
     color: #00142d;
 }
@@ -160,8 +159,10 @@
     justify-content: space-between;
 }
 .project{
+    text-align: center;
     width: 360px;
-    color: #00142d;   
+    color: #00142d; 
+    padding: 0 0 30px 0;  
 }
 .project h3{
     font-size: 20px;
@@ -170,7 +171,9 @@
     font-size: 15px;
 }
 .more img{
-    width: 100%;
+    border-radius: 50px;
+    border:1px  solid cornflowerblue;
+    width: 50%;
 }
 .recommend h2{
     font-size: 50px;
