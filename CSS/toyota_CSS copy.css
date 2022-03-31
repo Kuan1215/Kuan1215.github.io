@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bottom-layer{
+    width: 100%;
+    height: 100%;
+}
+.features{
+    width: 1200px;
+    height: 800px;
+    position:relative;
+    margin: 300px auto 400px auto;
+}
+.features-title{
+    background-color: #000;
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    position: relative;
+    
+}
+
+.features:nth-child(even) .features-title{
+    right: -800px;
+}
+.features-title h2 span{
+    font-size: 150px;
+    writing-mode: vertical-lr;
+}
+.features-title h2{
+    height: 160px;
+    font-size: 70px;
+    background-color: #f00;
+}
+.features-title span{
+    font-size: 40px;
+}
+.features-title p{
+    padding: 10px;
+    height: 20px;
+    font-size: 20px;
+}
+.features-block-background{
+    width: 700px;
+    height: 400px;
+    background-color: rgb(250, 250, 246);
+    position: absolute;
+    top :20px;
+    right: 0px;
+    z-index: -2;
+}
+.features:nth-child(even) .features-block-background{
+    position: absolute;
+    top :60px;
+    right: 60px;
+    z-index: -2;
+
+}
+.features-picture{
+    width: 900px;
+    height: 500px;
+
+}
+.features:nth-child(odd) .features-picture{
+    position: absolute;
+    top:160px;
+    right: 60px;  
+    
+    z-index: -1;
+}
+.features:nth-child(even) .features-picture{
+    top: 160px;
+    left: 10px;
+    position: absolute;
+    z-index: -1;
+}
+.features-picture img{
+    width: 100%;
+    height: 100%;
+}
+.features-list{
+    background-color: rgb(241, 234, 234);
+    width: 800px;
+    height: 300px;
+}
+.features:nth-child(odd) .features-list{
+    position: relative;
+    top: 90px;
+    left: 40px;
+}
+.features:nth-child(even) .features-list{
+    position: relative;
+    top: 90px;
+    left: 350px;
+}
+.features-list li{
+    color: rgb(100, 100, 98);
+}
+.features-list p{
+    height: 80px;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(190, 39, 39);
+}
+.features-list h3{width: 100px;
+    background-color: #000;
+    font-size: 20px;
+    color: #fff;
+}
+.features-link-picture img{
+    width: 150px;
+    height: 100px;
+}
+.features:nth-child(odd) .features-link-picture{
+    position: absolute;
+    right: 30px;
+    top: 400px;
+}
+.features:nth-child(even) .features-link-picture{
+    position: absolute;
+    left: -10px;
+    top: 400px;
+}
