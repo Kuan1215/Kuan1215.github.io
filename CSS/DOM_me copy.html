@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 700px;
+            border: 4px solid rgb(130, 129, 130);
+            margin: auto;
+        }
+        .pic{
+            width: 300px;
+            margin: 10px auto 10px auto;
+        }
+        .pic img{
+            width: 100%;
+        }
+        .idol{
+            display: flex;     
+        }
+        .idol img{
+            width: calc(100%  - 20px);
+            margin: 10px;
+            height: 95%;
+        }
+        .text{
+            display: flex;
+            border-bottom: 4px solid rgb(130, 129, 130) ;
+            border-top: 4px solid rgb(130, 129, 130) ;
+            flex-wrap:wrap ;
+        }
+        .card{
+            display: flex;
+            align-items: center;
+            width: calc(100% / 2 - 10px);
+            margin: 5px;
+            text-align: center;
+        }
+        .text h2{
+            font-size: 30px;
+        }
+        .text p{
+            font-size: 20px;
+        }
+        .text span{
+            font-size: 30px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="pic">
+            <img  src="" alt="">
+        </div>
+        <div class="text">
+            <div class="card name">
+                <h2></h2>
+                <span>:</span>
+                <p></p>
+            </div>
+            <div class="card email">
+                <h2></h2>
+                <span>:</span>
+                <p></p>
+            </div>
+            <div class="card school">
+                <h2></h2>
+                <span>:</span>
+                <p></p>
+            </div>
+            <div class="card interest">
+                <h2></h2>                <span>:</span>
+                <p></p>
+            </div>
+        </div>
+        <div class=" idol">
+            <div class="item">
+                <img src="" alt="">
+            </div>
+            <div class="item">
+                <img src="" alt="">
+            </div>
+            <div class="item">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let img = document.querySelector("img");
+        let h2 = document.querySelectorAll("h2");
+        let p = document.querySelectorAll("p");
+        let idolimg = document.querySelectorAll(".idol img");
+
+        let picsrc = "https://raw.githubusercontent.com/Kuan1215/Kuan1215.github.io/main/images.jpg";
+        let title = ["姓名","E-email","學校","興趣"];
+        let content = ["昱寬","asdasd","中華大學","追星"];
+        let idolurl = [
+            "https://raw.githubusercontent.com/Kuan1215/Kuan1215.github.io/main/1550287824-1875196596_n.jpg",
+            "https://raw.githubusercontent.com/Kuan1215/Kuan1215.github.io/main/1550288022-1504325609_n.jpg",
+            "https://raw.githubusercontent.com/Kuan1215/Kuan1215.github.io/main/1550287850-1572127472_n.jpg"
+        ];
+        img.setAttribute("src",picsrc);
+        title.forEach((t,index)=>{h2[index].innerText = title[index]});
+        content.forEach((t,index)=>{p[index].innerText = content[index]});
+        idolurl.forEach((t,index)=>{idolimg[index].setAttribute("src",idolurl[index])});
+    </script>
+</body>
+</html>
