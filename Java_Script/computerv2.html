@@ -56,7 +56,7 @@
     <script>
         let sym ='' ;
         let Main_number='';
-        let vice_number='';
+        let vice_number='0';
         let input = document.querySelector('input');
         document.querySelectorAll('.btn_num').forEach(num => {
             num.addEventListener('click', (e) => {
@@ -107,19 +107,29 @@
         document.querySelectorAll('.btn_symbol').forEach(symbol => {
             symbol.addEventListener('click', (e) => {
                 if (symbol.innerText == '+') {
+                    Main_number = parseFloat(vice_number) + parseFloat(Main_number);
+                    input.setAttribute('value', Main_number);
                     sym ='+';
-                    vice_number = Main_number;
+                    // vice_number = Main_number;
                 }
                 else if (symbol.innerText == '-') {
+                    Main_number = parseFloat(vice_number) - parseFloat(Main_number);
+                    input.setAttribute('value', Main_number);
                     sym ='-';
                 }
                 else if (symbol.innerText == 'x') {
+                    Main_number = parseFloat(vice_number) * parseFloat(Main_number);
+                    input.setAttribute('value', Main_number);
                     sym ='x';
                 }
                 else if (symbol.innerText == '/') {
+                    Main_number = parseFloat(vice_number) / parseFloat(Main_number);
+                    input.setAttribute('value', Main_number);
                     sym ='/';
                 }
                 else if (symbol.innerText == '%') {
+                    Main_number = parseFloat(vice_number) % parseFloat(Main_number);
+                    input.setAttribute('value', Main_number);
                     sym ='%';
                 }
                 vice_number = Main_number;
