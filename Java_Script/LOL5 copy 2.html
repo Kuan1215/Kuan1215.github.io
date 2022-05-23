@@ -145,7 +145,6 @@
         crossorigin="anonymous"></script>
 </body>
 <script type="module">
-    import { $g } from './helpers.js';
     let url = "https://raw.githubusercontent.com/Kuan1215/FileStorage/main/LOL.json";
     let heroJason;
     let heroArray = [];
@@ -166,7 +165,7 @@
     xhr.send();
     function getcard(heroArray){//id,text,stats
         container.innerHTML = ""
-        let cardTemplate = $g('#cardTemplate');
+        let cardTemplate = document.querySelector('#cardTemplate');
         // console.log(heroArray);
         heroArray .forEach(hero => {
             console.log(hero)
